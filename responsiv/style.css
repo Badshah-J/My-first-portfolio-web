@@ -1,0 +1,248 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Rokkitt', serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.hamburger {
+    width: 20px;
+    border-bottom: 2px solid white;
+    padding: 2px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(37 162 224 / 81%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-logo {
+    position: relative;
+    height: 61px;
+    WIDTH: 184PX;
+
+    background-image: url(Logo1.png);
+    background-size: cover;
+}
+
+.nav-item ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item ul li {
+    list-style: none;
+    margin-left: 63px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item a:hover {
+    color: rgb(215, 25, 240);
+    font-size: 21px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 2px solid yellow;
+}
+
+.content {
+    height: 80vh;
+    width: 100vw;
+    background-image: url(../portfolio/Background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 0px 8px;
+}
+
+.left-content {
+    height: 300px;
+    width: 220px;
+    background-image: url(Proffile.jpg);
+    background-size: cover;
+    border: 2px solid green;
+}
+
+.right-content {
+    color: white;
+    align-items: center;
+    font-size: 20px;
+}
+
+.right-content strong {
+    color: red;
+    font-family: 'Rokkitt', serif;
+}
+
+.section-middle {
+    margin: 38px 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-img {
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid yellow;
+    border-block: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container .skills {
+    color: red;
+    font-size: 32px;
+}
+
+.container h4 {
+    color: azure;
+    font-size: 20px;
+    margin: 9px 2px;
+}
+
+.co-fee-form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.contact-form {
+    border: 1px solid white;
+    width: 500px;
+    margin: 10px 50px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.contact-heding {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feedback {
+    border: 1px solid white;
+    padding: 10px 60px;
+}
+
+.feedback-form {
+    margin: 28px 30px;
+
+}
+
+.form-hedding {
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 65px;
+}
+
+.input-area {
+    width: 400px;
+    height: 40px;
+    padding: 6px 10px;
+    font-size: 20px;
+}
+
+.foot {
+    height: 50px;
+    width: 100vw;
+    /* padding: 10px 150px; */
+    color: white;
+    background-color: rgb(37 162 224 / 81%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:500px) and (min-width:100px) {
+    .navbar {
+        height: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        height: 2.8rem;
+        width: 7.8rem;
+
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: end;
+        cursor: pointer;
+        margin: 0px 26px;
+    }
+
+    .section-middle {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        width: auto;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .nav-item ul {
+        top: 33px;
+        width: 100vw;
+        height: 100vh;
+        background-color: sienna;
+        position: fixed;
+        display: block;
+        right: -100%;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-item ul a {
+        margin: 50px;
+    }
+
+    .content {
+        padding-left: 10px;
+    }
+
+    .feedback {
+        width: 251px;
+        padding: 1px 1px;
+    }
+
+    .input-area {
+        width: 214px;
+        height: 33px;
+        font-size: 15px;
+    }
+}
